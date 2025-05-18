@@ -1,0 +1,9 @@
+<div class="chessboard">
+  <div class="row" *ngFor="let row of board; let rowIndex = index">
+    <div class="square" 
+         *ngFor="let square of row; let colIndex = index" 
+         [ngClass]="{'light': (rowIndex + colIndex) % 2 === 0, 'dark': (rowIndex + colIndex) % 2 !== 0}">
+      <app-piece [piece]="square"></app-piece>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.piece {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.piece:hover {
+    transform: scale(1.1);
+}
+
+.piece.white {
+    color: white;
+}
+
+.piece.black {
+    color: black;
+}
+
+.piece.king {
+    background-image: url('../../assets/icons/chess-icons/king.svg');
+}
+
+.piece.queen {
+    background-image: url('../../assets/icons/chess-icons/queen.svg');
+}
+
+.piece.rook {
+    background-image: url('../../assets/icons/chess-icons/rook.svg');
+}
+
+.piece.bishop {
+    background-image: url('../../assets/icons/chess-icons/bishop.svg');
+}
+
+.piece.knight {
+    background-image: url('../../assets/icons/chess-icons/knight.svg');
+}
+
+.piece.pawn {
+    background-image: url('../../assets/icons/chess-icons/pawn.svg');
+}
+
+.piece {
+    background-size: cover;
+}
